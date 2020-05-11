@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Four card feature section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        min-width: 100%;
+        line-height: 1;
+        /* color: ; */
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        padding: 2rem;
+      }
+
+      a {
+        color: #395db8;
+        text-decoration: none;
+      }
+      a:focus {
+        color: inherit;
+      }
+
+      .header {
+        text-align: center;
+      }
+
+      /* Helper Methods */
+      .light {
+        font-weight: 200;
+      }
+
+      .bold {
+        font-weight: 600;
+      }
+
+      .lh-2 {
+        line-height: 2;
+      }
+
+      .header .title1 {
+        font-size: 2rem;
+        padding-top: 1rem;
+      }
+      .header .title2 {
+        font-size: 2rem;
+        padding: 1rem;
+      }
+      .header .header-body {
+        width: 35%;
+        margin: 1rem auto;
+      }
+
+      .container {
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+
+      .container .card {
+        width: 28%;
+        padding: 2rem;
+        margin: 1rem;
+        display: inline-block;
+        text-align: left;
+        border-radius: 5px;
+        box-shadow: 1px 1px 10px hsl(229, 6%, 66%);
+      }
+      .container .card .card-title {
+        font-size: 1.5rem;
+      }
+      .container .card .card-description {
+        width: 80%;
+        margin: 1rem 0 3rem 0;
+      }
+      .container .card .card-img {
+        text-align: end;
+      }
+
+      .supervisor {
+        border-top: solid 5px hsl(180, 62%, 55%);
+      }
+      .team-builder {
+        border-top: solid 5px hsl(0, 78%, 62%);
+      }
+      .calculator {
+        border-top: solid 5px hsl(212, 86%, 64%);
+      }
+      .karma {
+        border-top: solid 5px hsl(34, 97%, 64%);
+      }
+
+      .shift {
+        position: relative;
+        top: 10rem;
+      }
+
+      footer .attribution {
+        text-align: center;
+      }
+      footer .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="title1 light">
+        Reliable, efficient delivery
+      </div>
+      <div class="title2 bold">
+        Powered by Technology
+      </div>
+      <div class="header-body lh-2">
+        Our Artificial Intelligence powered tools use millions of project data
+        points to ensure that your project is successful
+      </div>
+    </div>
+    <div class="container">
+      <div class="card supervisor shift">
+        <div class="card-title bold">Supervisor</div>
+        <div class="card-description light lh-2">
+          Monitors activity to identify project roadblocks
+        </div>
+        <div class="card-img">
+          <img src="./images/icon-supervisor.svg" alt="" />
+        </div>
+      </div>
+      <div class="card team-builder">
+        <div class="card-title bold">Team Builder</div>
+        <div class="card-description light lh-2">
+          Scans our talent network to create the optimal team for your project
+        </div>
+        <div class="card-img">
+          <img src="./images/icon-team-builder.svg" alt="" />
+        </div>
+      </div>
+      <div class="card calculator shift">
+        <div class="card-title bold">Calculator</div>
+        <div class="card-description light lh-2">
+          Uses data from past projects to provide better delivery estimates
+        </div>
+        <div class="card-img">
+          <img src="./images/icon-calculator.svg" alt="" />
+        </div>
+      </div>
+      <div class="card karma">
+        <div class="card-title bold">Karma</div>
+        <div class="card-description light lh-2">
+          Regularly evaluates our talent to ensure quality
+        </div>
+        <div class="card-img">
+          <img src="./images/icon-karma.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/Sagarmak" target="_blank">Sagar Makhija</a>.
+      </p>
+    </footer>
+  </body>
+</html>
