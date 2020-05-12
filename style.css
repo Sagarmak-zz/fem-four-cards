@@ -109,3 +109,33 @@ footer .attribution {
 footer .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media all and (max-width: 550px) {
+  /* Header */
+  .header .title1 {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+  }
+  .header .title2 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+  .header .header-body {
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  /* Body */
+  .container {
+    margin: 4rem 0;
+  }
+  .container .card {
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .shift {
+    position: inherit;
+  }
+}
